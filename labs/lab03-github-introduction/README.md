@@ -83,6 +83,36 @@ Complete all of the following in your notes section.
 ---
 
 # Section 3: Student Notes
+---
+---
+Benjamin
+---
 
-Delete this line and write your notes here.
+# **Git Notes For September 21st**
 
+## Introduction To GitHub
+---
+- GitHub is a Website that helps store and manage coding projects
+- Uses Git *a version control system*
+- Allows collaboration
+- Uses repositories to store files, folders, and version history
+    
+## Introduction To Markdown Language
+---
+1. Make sure to use Headers for readability
+2. When more important information needs special emphasis, use **bold** and *italics* to call attention to them
+3. Document all information regarding your coding and building experience to help current and future team members
+
+### Creating a checklist to help task management
+---
+It may help to create a tasklist for yourself to help manage what you have completed and what still needs to be done.
+  - [x] Create Readme file
+  - [ ] Create HTML file
+  - [ ] Create CSS file
+  - [ ] Create JS file
+
+Creating independent files will help keep your code separate and less confusing, and documenting a checklist helps not only yourself,
+but everyone working on the project can keep pace with what has been done
+
+---
+end of 09/21/2026 change
