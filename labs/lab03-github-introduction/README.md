@@ -115,4 +115,7 @@ Creating independent files will help keep your code separate and less confusing,
 but everyone working on the project can keep pace with what has been done
 
 ---
+
+[GitHub] (https://github.com/bpedrin-2026/software-systems-110/blob/main/labs/lab03-github-introduction/README.md)
+
 end of 09/21/2026 change
