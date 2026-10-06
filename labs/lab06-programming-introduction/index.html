@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,31 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+
 <body>
 
     <div class="page-layout">
 
         <aside class="sidebar">
 
-            <h2>Program Rules</h2>
+            <h2>Program Rules Have Changed</h2>
 
             <div class="rules">
 
-                If doISayHello is true<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Say "Hello, World!"<br><br>
+                Change <strong>See This Quote</strong> to Yes, and<br>
+                See a quote from Wayne Dyer<br><br>
 
-                Otherwise, if doISayGoodbye is true<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Say "Goodbye, World!"<br><br>
+                Or change <strong>See This Quote Instead</strong> to Yes<br>
+                to see a new quote that may speak to you.<br><br>
+
+                If you want to see both quotes, change both <strong>See This Quote</strong><br>
+                 & <strong>See This Quote Instead</strong> to Yes<br><br>
 
                 Otherwise<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Say "Why am I even out here? It's cold."<br><br>
+                See a message that may speak to you!<br><br>
 
-                Always<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Say something so the world knows you are going inside now.
-
+                But You Will Always See the Base Reality!<br>
+                
             </div>
 
         </aside>
@@ -38,66 +42,65 @@
             <h1>Decision Making Program</h1>
 
             <p>
-                Change the boolean variables below and then run the program.
+                Change the variables below and then run the program.
                 The values of these variables determine what message is displayed.
             </p>
 
             <h2>Program Variables</h2>
 
             <p>
-                I walk outside of my home. It's a beautiful fall day in La Crosse, Wisconsin.
-                <br>
-                The sun is shining. The air smells like apples and crisp autumn leaves.
+                Sometimes people need to make decisions based on different perspectives. <br>
+                See which quote speaks to you, and helps you create the change you want.
             </p>
 
             <div class="variable-container">
 
                 <div class="variable-card">
 
-                    <h3>Hello Option</h3>
+                    <h3>Quote of the Day</h3>
 
                     <p>
-                        Should I say "Hello, World!"?
+                        This quote is by Wayne Dyer.
                     </p>
 
                     <label for="helloInput">
-                        Set <strong>doISayHello</strong> to:&nbsp;
+                        <strong>See the Quote:</strong>&nbsp;
                     </label>
 
                     <select id="helloInput">
-                        <option value="true">true</option>
-                        <option value="false" selected>false</option>
+                        <option value="true">Yes</option>
+                        <option value="false" selected>No</option>
                     </select>
 
                 </div>
 
                 <div class="variable-card">
 
-                    <h3>Goodbye Option</h3>
+                    <h3>Perhaps you just need to hear a deeper Truth!</h3>
 
                     <p>
-                        Should I say "Goodbye, World!"?
+                        This is just a reminder to listen to your inner voice.
                     </p>
 
                     <label for="goodbyeInput">
-                        Set <strong>doISayGoodbye</strong> to:&nbsp;
+                        <strong>See This Quote Instead:</strong>&nbsp;
                     </label>
 
                     <select id="goodbyeInput">
-                        <option value="true">true</option>
-                        <option value="false" selected>false</option>
+                        <option value="true">Yes</option>
+                        <option value="false" selected>No</option>
                     </select>
 
                 </div>
 
             </div>
 
-            <button onclick="runProgram()">Run Program</button>
+            <button onclick="runProgram()">See Your Quote(s)</button>
 
             <h2>Program Output</h2>
 
             <div id="output">
-                The program output will appear here.
+                Receive Your Insight Here.
             </div>
 
         </div>
@@ -107,7 +110,7 @@
     <script>
 
         let doISayHello = false;
-        let doISayGoodbye = false;
+        let doISayGoodbye = true;
 
         function updateVariables() {
 
@@ -145,7 +148,7 @@
                 doISayHello = true
                 doISayGoodbye = true
              
-                Observation:
+                Observation: Since the first value was true, the original message is displayed first, followed by the final message.
             
                 ***********************************************************************
                 
@@ -153,7 +156,7 @@
                 doISayHello = false
                 doISayGoodbye = false
              
-                Observation:
+                Observation: Since both values are false, the default message is displayed first, followed by the final message.
             
                 ***********************************************************************
 
@@ -161,7 +164,7 @@
                 doISayHello = true
                 doISayGoodbye = false
              
-                Observation:
+                Observation: Since the first value is true and the second value is false, the greeting message is displayed first, followed by the final message
 
                 ***********************************************************************    
 
@@ -169,33 +172,40 @@
                 doISayHello = false
                 doISayGoodbye = true
              
-                Observation:
+                Observation: Since the first value is false and the second value is true, the goodbye message is displayed first, followed by the final message.
                 
             */
-    
+
 
             let message;
             let finalMessage;
 
-            if(doISayHello == true) {
+            if (doISayHello == true && doISayGoodbye == true) {
 
                 // Assign a greeting message.
-                message = "Hello, World!";
+                message = "Change the way you look at things, and the things you look at change.";
+                message += "<br>" + "You are the active creator of your own reality.";
 
-            } else if(doISayGoodbye == true) {
+            } else
+                if (doISayHello == true) {
 
-                // Assign a goodbye message.
-                message = "Goodbye, World!";
+                    // Assign a greeting message.
+                    message = "Change the way you look at things, and the things you look at change.";
 
-            } else {
+                } else if (doISayGoodbye == true) {
 
-                // Assign a default message.
-                message = "Why am I even out here? It's cold.";
+                    // Assign a goodbye message.
+                    message = "You are the active creator of your own reality.";
 
-            }
+                } else {
+
+                    // Assign a default message.
+                    message = "Take action, and all things are possible for you.";
+
+                }
 
             // Assign a message that always displays.
-            finalMessage = "I am tired of being outside. I am going inside now.";
+            finalMessage = "Without an understanding of the abilities within, you will never truly be free.";
 
             displayMessages(message, finalMessage);
 
@@ -211,4 +221,5 @@
     </script>
 
 </body>
+
 </html>
