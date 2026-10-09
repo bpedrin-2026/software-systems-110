@@ -18,7 +18,7 @@
  * Your mission:
  * Add the correct keyword so isDayMode becomes a proper variable.
  *****************************************************************/
-let isDayMode;   // boolean: starts as false (night mode is default)
+let isDayMode;
 isDayMode = false;   // boolean: starts as false (night mode is default)
 
 
